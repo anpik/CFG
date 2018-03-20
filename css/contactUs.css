@@ -1,0 +1,74 @@
+/************************* Contact Us ****************************/
+#address {
+	display:block;
+	width:240px;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:18px;
+	margin:0;
+	padding-left:50px;
+}
+
+#address p {
+	margin:0px;
+}
+
+#contactUs {
+	display:block;
+	width:740px;
+	padding:50px;
+	margin:0px;
+}
+
+#fullName {
+	display:block;
+	width:730px;
+	height:30px;
+	margin:0px;
+	font-size:14px;
+	color:#666;
+	padding-left:10px;
+}
+
+#email {
+	display:block;
+	width:730px;
+	height:30px;
+	margin:0px;
+	font-size:14px;
+	color:#666;
+	padding-left:10px;
+}
+
+#contactUsMsg {
+	display:block;
+	width:730px;
+	height:500px;
+	margin:0px;
+	color:#666;
+	font-size:14px;
+	resize:none;
+	padding-left:10px;
+}
+
+#contactUsMsg:focus {
+	color:#000;
+}
+
+#contactUsSubmit {
+	width:80px;
+	height:30px;
+	display:block;
+	border:0px;
+	margin: 0 auto;
+	background: white;
+}
+
+#contactUsSubmit:hover {
+	cursor: pointer;
+	background: #ccc;
+}
+
+#contactUsSubmit:focus {
+	border:0px;
+	outline:none;
+}

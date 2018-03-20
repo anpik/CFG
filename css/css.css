@@ -1,0 +1,276 @@
+body {
+	margin:0;
+	padding:0;
+	background:url(../graphics/BG.png) repeat fixed;
+}
+
+ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+li {
+	float:left;
+}
+
+a {
+	outline:0;
+	text-align:center;
+	text-decoration:none;
+	display:block;
+}
+
+/*********************** Animations ***************************/
+
+@keyframes menuDropDwn {
+	0% {
+		height:0px;
+		padding-top:0px;
+		font-size:0px;
+	}
+
+	99% {
+		height:26px;
+		padding-top:6px;
+		font-size:0px;
+	}
+
+	100% {
+		font-size:24px;
+	}
+}
+
+@keyframes menuBar {
+	from {color:#000;}
+	to {color:#ccc;}
+}
+
+@-webkit-keyframes footerLinks {
+	from {color:#ccc;}
+	to {color:#666;}
+}
+
+@-webkit-keyframes devContact {
+	from {color:#996;}
+	to {color:#666;}
+}
+
+/************************** Header **************************/
+#logo {
+	font-family: 'Parisienne', cursive;
+	font-size: 80px;
+	color: red;
+	font-weight: bold;
+	text-shadow:
+       3px 3px 0 #424242,
+     -1px -1px 0 #424242,
+      1px -1px 0 #424242,
+      -1px 1px 0 #424242,
+       1px 1px 0 #424242;
+	text-align: center;
+	padding-top: 50px;
+}
+
+/*************************** Menu Bar ****************************/
+
+#menuBar {
+	width:100%;
+	background:url(../graphics/Bar.png) center repeat-x;
+}
+
+#menu {
+	height: 100px;
+	width: 460px;
+	margin:40px auto 60px auto;
+	position: relative;
+}
+
+/************************* Dropdown Menu *************************/
+#menu a {
+	width:115px;
+	height:50px;
+	padding-top:35px;
+	color:#000;
+	font-size:25px;
+	font-family: 'Amatic SC', cursive;
+	text-decoration:none;
+	font-weight:bold;
+}
+
+#menu a.current {
+	background:url(../graphics/current.png) bottom no-repeat;
+}
+
+#menu a:hover {
+	animation:menuBar 0.3s;
+	animation-fill-mode:forwards;
+	color:#ccc;
+}
+
+#menu ul > li > ul {
+	display:none;
+}
+
+#menu ul > li:hover > ul {
+	display:block;
+	width:115px;
+	position:relative;
+	top:-5px;
+	z-index:100;
+}
+
+#menu ul > li:hover > ul > li > a {
+	animation:menuDropDwn 0.3s;
+	animation-fill-mode:forwards;
+}
+
+#menu ul > li > ul > li > a {
+	background:url(../graphics/dropDownBG.png) repeat;
+	height:26px;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+#menu ul > li > ul > li > a.subCurrent {
+	text-decoration:underline;
+}
+
+#menu ul > li > ul > li:hover > ul {
+	display:block;
+	position:relative;
+	top:-34px;
+	left:-115px;
+}
+
+/******************* Contents & PhotoShuffler ********************/
+
+#PSWrapper {
+	width:880px;
+	margin:0 auto;
+	padding:10px;
+	background:url(../graphics/border.png) repeat;
+}
+
+#photoSlider {
+	width:880px;
+	height:300px;
+	background:#111;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#contentWrapper {
+	width:880px;
+	margin:50px auto 0px auto;
+	padding:10px;
+	background:url(../graphics/border.png) repeat;
+}
+
+#contents {
+	width:840px;
+	height:auto;
+	padding:20px;
+	color:#CCC;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:15px;
+	background:url(../graphics/contentFill.png) repeat-y;
+}
+
+/**************************** Footer *****************************/
+
+#footer {
+	width:100%;
+	margin-top:50px;
+	padding-top:10px;
+	border-top:2px solid red;
+	background:#333333;
+}
+
+#footerAligner {
+	width:900px;
+	margin:0 auto;
+	overflow: auto;
+}
+
+/************************ CFG Logo *************************/
+
+#cfgLogo {
+	float: left;
+	background: url(../graphics/cfgpng.png) no-repeat;
+	background-size: contain;
+	width: 400px;
+	height: 100px;
+}
+
+#cfgLogo:hover {
+	background:url(../graphics/cfgpng2.png) no-repeat;
+	background-size: contain;
+	cursor: pointer;
+}
+
+/************************** footer short message ****************************/
+#shortMsg {
+	float: left;
+	padding: 0 0 0 40px;
+	width: 250px;
+	font-size: 18px;
+	font-family: tahoma;
+	color: #ccc;
+}
+
+/************************** Follow Us ****************************/
+
+#followUs {
+	display:block;
+	float:right;
+	width:200px;
+}
+
+#followUsIMG {
+	width:199px;
+	height:30px;
+	background:url(../graphics/follow.png) 13px -32px;
+}
+
+#facebook {
+	float:left;
+	width:32px;
+	height:31px;
+	background:url(../graphics/follow.png) 0px 0px;
+	margin-left:30px;
+	margin-top:20px;
+}
+
+#facebook:hover {
+	background:url(../graphics/follow.png) -101px 0px;
+	cursor: pointer;
+}
+
+#twitter {
+	float:left;
+	width:32px;
+	height:31px;
+	background:url(../graphics/follow.png) -33px 0px;
+	margin-left:30px;
+	margin-top:20px;
+}
+
+#twitter:hover {
+	background:url(../graphics/follow.png) -134px 0px;
+	cursor: pointer;
+}
+
+#youtube {
+	float:left;
+	width:32px;
+	height:31px;
+	background:url(../graphics/follow.png) -66px 0px;
+	margin-left:30px;
+	margin-top:20px;
+}
+
+#youtube:hover {
+	background:url(../graphics/follow.png) -167px 0px;
+	cursor: pointer;
+}
