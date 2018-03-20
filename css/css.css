@@ -180,6 +180,11 @@ a {
 	text-justify: inter-word;
 }
 
+#contents img {
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	padding: 5px;
+}
 /**************************** Footer *****************************/
 
 #footer {
