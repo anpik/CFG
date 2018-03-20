@@ -175,6 +175,9 @@ a {
 	font-family:Verdana, Geneva, sans-serif;
 	font-size:15px;
 	background:url(../graphics/contentFill.png) repeat-y;
+	overflow: auto;
+	text-align: justify;
+	text-justify: inter-word;
 }
 
 /**************************** Footer *****************************/
